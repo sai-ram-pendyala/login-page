@@ -5,45 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="javascript.js" defer></script>
     <title>Sign Up</title>
 </head>
 <body>
-    <img id="background" src="photo-1493612276216-ee3925520721.avif" alt="background-image"/>
+    <div id="image-container">
+        <img id="background" src="photo-1493612276216-ee3925520721.avif" alt="background-image"/>
+        <div id="image-text">
+            
+            My Page
+        </div>
+    </div>
     <div id="main">
         <div id="header" class="block">
             Our community is made up of people just like you - passionate, driven, and committed to making a difference in the world. By signing up, you'll become a part of this amazing network of individuals who are working together to create positive change.
         </div>
         <div id="form-div" class="block">
-            <form>
+            <form action="" method="">
                 <legend>Get ready to discover a whole new world!</legend>
                 <fieldset>
                     <div class="form-group">
                         <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname">
+                        <input type="text" id="fname" name="fname" placeholder="Taylor" required>
                     </div>
                     <div class="form-group">
                         <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname">
+                        <input type="text" id="lname" name="lname" placeholder="Swift" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" placeholder="taylor@example.com" required>
                     </div>
                     <div class="form-group">
                         <label for="mobilenumber">Phone Number</label>
-                        <input type="text" id="mobilenumber" name="mobilenumber" minlength="10" maxlength="10">
+                        <input type="text" id="mobilenumber" name="mobilenumber" placeholder="1234567890" minlength="10" maxlength="10" pattern="^\d{10}$" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" minlength="8" placeholder="12345" required>
                     </div>
                     <div class="form-group">
                         <label for="confirmed-password">Confirm Password</label>
-                        <input type="password" id="confirmed-password" name="confirmed-password">
+                        <input type="password" id="confirmed-password" name="confirmed-password" minlength="8" placeholder="12345" required>
                     </div>
                 </fieldset>
                 <fieldset id="button-field">
@@ -52,7 +59,7 @@
             </form>
         </div>
         <div class="block">
-            <div>Already have an account?<a href="">Log in</a></div>
+            <div>Already have an account? <a href="">Log in</a></div>
         </div>
     </div>
 </body>

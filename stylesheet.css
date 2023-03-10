@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -16,6 +17,21 @@ body {
     justify-content: space-around;
     padding: 5%;
     background-color: #d8f4f5;
+}
+
+#image-container {
+    position: relative;
+    /* display: inline-block; */
+}
+
+#image-text {
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    color: #fff;
+    font-family: VT323, sans-serif;
+    font-size: 3rem;
 }
 
 #header {
@@ -51,9 +67,17 @@ input {
     margin-right: 100px
 }
 
+input:focus {
+    outline-color: #115E69;
+    box-shadow: 0 0 5px #115E69;
+}
+ 
+input:invalid {
+    outline-color: #FD7072;
+}
+
 
 button {
-    margin-left: ;
     display: inline-block;
     outline: none;
     cursor: pointer;
@@ -74,4 +98,15 @@ button {
 button:hover {
     color: #fff;
     background-color: #fc514e;
+}
+
+a {
+    text-decoration: none;
+    color: #fa8479;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #fc514e;
+    text-decoration: underline;
 }
