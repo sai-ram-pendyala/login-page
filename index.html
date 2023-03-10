@@ -9,29 +9,51 @@
 </head>
 <body>
     <img id="background" src="photo-1493612276216-ee3925520721.avif" alt="background-image"/>
-    <div>
-        Our community is made up of people just like you - passionate, driven, and committed to making a difference in the world. By signing up, you'll become a part of this amazing network of individuals who are working together to create positive change.
+    <div id="main">
+        <div id="header" class="block">
+            Our community is made up of people just like you - passionate, driven, and committed to making a difference in the world. By signing up, you'll become a part of this amazing network of individuals who are working together to create positive change.
+        </div>
+        <div id="form-div" class="block">
+            <form>
+                <legend>Get ready to discover a whole new world!</legend>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="mobilenumber">Phone Number</label>
+                        <input type="text" id="mobilenumber" name="mobilenumber" minlength="10" maxlength="10">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmed-password">Confirm Password</label>
+                        <input type="password" id="confirmed-password" name="confirmed-password">
+                    </div>
+                </fieldset>
+                <fieldset id="button-field">
+                    <button type="submit">Create Account</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="block">
+            <div>Already have an account?<a href="">Log in</a></div>
+        </div>
     </div>
-    <form>
-        <legend>Get ready to discover a whole new world!</legend>
-        <fieldset>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname">
-        </fieldset>
-        <fieldset>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-            <label for="mobilenumber">Phone Number</label>
-            <input type="text" id="mobilenumber" name="mobilenumber" minlength="10" maxlength="10">
-        </fieldset>
-        <fieldset>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-            <label for="confirmed-password">Confirm Password</label>
-            <input type="password" id="confirmed-password" name="confirmed-password">
-        </fieldset>
-    </form>
 </body>
 </html>
